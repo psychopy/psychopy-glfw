@@ -11,7 +11,7 @@ name = "psychopy-glfw"
 
 # Version for the package. Use setuptools conventions for specifying the version
 # string.
-version = "0.1"
+version = "0.0.1"
 
 # Define packages to be included with this plugin.
 packages = [
