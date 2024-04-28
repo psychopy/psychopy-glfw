@@ -46,6 +46,7 @@ setup(
     name=name,  # set the name
     version=version,  # put your plugin version here
     packages=packages,
+    install_requires=['glfw'],
     package_dir=package_dir,
     package_data=package_data,
     author="Matthew D. Cutone",
