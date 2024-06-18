@@ -9,4 +9,4 @@ the `winType` when creating a new window.
 Creating a window using GLFW as the backend::
 
     import psychopy.visual as visual
-    win = visual.Window(winType='gflw')
+    win = visual.Window(winType='glfw')

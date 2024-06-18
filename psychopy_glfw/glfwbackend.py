@@ -523,8 +523,11 @@ class GLFWBackend(BaseBackend):
         """
         pass
 
-    def onResize(self, width, height):
+    def onResize(self, glfw_handle, width, height):
         _onResize(width, height)
+
+    def onMove(self, glfw_handle, posX, posY):
+        super().onMove(posX, posY)
 
     @attributeSetter
     def gamma(self, gamma):
