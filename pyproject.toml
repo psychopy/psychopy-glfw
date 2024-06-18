@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "psychopy-glfw"
+version = "0.0.2"
+description = "Extension package for PsychoPy adding support got GLFW windows."
+readme = "README.md"
+requires-python = ">= 3.7"
+license = {text = "GNU General Public License v3 (GPLv3)"}
+authors = [
+  { name = "Matthew Cutone", email = "mcutone@opensciencetools.org" },
+]
+classifiers = [
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+]
+urls.homepage = "https://github.com/psychopy/psychopy-glfw"
+urls.repository = "https://github.com/psychopy/psychopy-glfw"
+dependencies = ["glfw"]
+
+[project.entry-points."psychopy.visual.backends"]
+GLFWBackend = "psychopy_glfw:GLFWBackend"
+
+[tool.setuptools.packages.find]
+where = ["", "psychopy_glfw",]
+
+[tool.setuptools.package-data]
+"*" = ["*.txt", "*.md"]
