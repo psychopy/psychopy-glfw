@@ -1,4 +1,4 @@
-# psychopy-wintype-glfw
+# psychopy-glfw
 GLFW window backend plugin for PsychoPy
 
 This plugin adds GLFW as a supported `winType` for PsychoPy once loaded. You can enable using GLFW by specifying it as 
