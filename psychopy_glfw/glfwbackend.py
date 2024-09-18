@@ -648,7 +648,7 @@ class GLFWBackend(BaseBackend):
         """On X11 systems this returns the XDisplay being used and None on all
         other platforms"""
         if sys.platform.startswith('linux'):
-            return self.screen
+            return glfw.get_x11_display()
 
     def close(self):
         """Close the window and uninitialize the resources
